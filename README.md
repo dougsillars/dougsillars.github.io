@@ -19,4 +19,12 @@ We would like to take these images and modify them to get the page to load faste
 <img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
 
 
-SO, what steps can we take.  As I discussed in my presentation, there are 
+So, what steps can we take?  As I discussed in my presentation, there are 
+
+<b>quality</b>
+
+<b>pixels</b>
+
+<b>responsiveness</b>
+
+<b> preview images</b>
