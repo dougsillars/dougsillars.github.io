@@ -10,4 +10,10 @@ In this excersise, we will use Cloudinary, a cloud based image delivery service 
 
 index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded staright from Google Photos, and as a result, the page weighs over 10 MB.
 
-We would like to take these images, and modify them to get the page to load faster.  To benchmark these tests, we'll use Website Speed Test, an image 
+We would like to take these images, and modify them to get the page to load faster.  To benchmark these tests, we'll use Website Speed Test, an cloud based image delivery service to optimize a simple webpage and improve it's load time while still serving beautful images that will delight everyone who visits.
+
+index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded staright from Google Photos, and as a result, the page weighs over 10 MB.
+
+We would like to take these images and modify them to get the page to load faster.  To benchmark these tests, we'll use Website Speed Test, a tool that tests the images on the page vs. an optimized version, and looks for savings.  The initial page scores "mediocre"
+
+<img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
