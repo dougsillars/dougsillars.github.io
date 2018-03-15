@@ -59,7 +59,7 @@ Rather than brute forcing through all the image formats, we can again leverage t
 
 All of these images are being delivered at a resolution much higher than required for a typical browser screen (and much too large for a mobile device!)  The device will resize the image, and shed unnecessary pixels from the image before it appears on the screen.  In some ways, this is double taxation - it costs time to download the large image, and then more time for the device to resize the file.
 
-To resize these images, you can adjust the width parameter in the url.  In the sample image, it is set to 2500. Open the image in a new tab, and adjust the number - and you'll see that a smaller (or larger) image is delivered to the browser:
+To resize these images, you can adjust the width parameter in the url.  In the sample image, it is set to 2500 (the parameter is w_2500). Open the image in a new tab, and adjust the number - and you'll see that a smaller (or larger) image is delivered to the browser:
 
 <a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
@@ -69,9 +69,9 @@ Again, we can brute force this change by manually changing the values for each i
 
 Now, you can adjust each image individually for the width, but we can also do so programmatically.  By enclosing the img tag in a picture tag, we can adjust the iamge that is delivered based on the viewport size:
 <picture>
-img="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
+<img="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
 srcset="http://res.cloudinary.com/hackchallenge/image/upload/w_500/v1521063217/MyVacation/IMG_20160619_173136306.jpg 500w, http://res.cloudinary.com/hackchallenge/image/upload/w_1000/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1000w,http://res.cloudinary.com/hackchallenge/image/upload/w_1500/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1500w"
-sizes = "100vw"
+sizes = "100vw"/>
 </picture>
 
 
