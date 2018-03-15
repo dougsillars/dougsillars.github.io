@@ -31,7 +31,7 @@ Shows that the load time was 19.6s, and the SpeedIndex (a measurement of speed t
 <img width = "100%" src="https://dougsillars.github.io/Webpagetest_screenshot.png"/>
 
 
-So, what steps can we take to make this page faster?  As I discussed in my presentation, there are several steps we can take. So, fork this page and begin Optimizing!
+So, what steps can we take to make this page faster?  As I discussed in my presentation, there are several steps we can take. So, clone this page and begin Optimizing!
 
 <h2>Image Quality</h2>
 
