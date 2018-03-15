@@ -92,8 +92,26 @@ In the last few secions, we have resized the images to balance the size and qual
 
 I have created SVG images to load in the background before the larger image can be downloaded.  This is greta on slower connections, asn the screen is populated with color indicating an image is coming.  I used <a href="https://github.com/technopagan/sqip">SQIP</a> to create these thumbnails.
 
-SVG files are vector graphics, and are stored as XML, so they can be added right to the HTML of your document:
+SVG files are vector graphics, and are stored as XML, so they can be added right to the HTML of your document.  For example, here is the original image, and the SVG created from it:
 
 <img src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063217/MyVacation/IMG_20160619_173136306.jpg">
 
 <img src="https://dougsillars.github.io/plitvice.svg">
+
+Using this code, we use the SVG as a background image.  Since the code is right ni the HTML, it loads immediately while the larger image continues to load:
+
+<pre><code>
+
+ <img width = "100%" src = "http://res.cloudinary.com/hackchallenge/image/upload/w_4000,q_auto,f_auto/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
+	style="background-size: cover; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjE2IDY2NCI+PGZpbHRlciBpZD0iYiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTIiIC8+PC9maWx0ZXI+PHBhdGggZmlsbD0iIzgyOTk3NiIgZD0iTTAgMGgzNjE2djY2M0gweiIvPjxnIGZpbHRlcj0idXJsKCNiKSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNyA3KSBzY2FsZSgxNC4xMjUpIiBmaWxsLW9wYWNpdHk9Ii41Ij48ZWxsaXBzZSBmaWxsPSIjYzBkNWRkIiByeD0iMSIgcnk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KC0yMC41Nzg1NSAtOTkuOTUxNSAyMC42NTg5NiAtNC4yNTMzOCAxMjUuMyAyOC4yKSIvPjxlbGxpcHNlIGZpbGw9IiMzZjUzMzAiIHJ4PSIxIiByeT0iMSIgdHJhbnNmb3JtPSJtYXRyaXgoMTMuMzM4MTggLTE1LjM2NTc5IDI3LjI0ODkzIDIzLjY1MzI2IDU2LjggMjEuNCkiLz48ZWxsaXBzZSBmaWxsPSIjNDg2MjE5IiByeD0iMSIgcnk9IjEiIHRyYW5zZm9ybT0icm90YXRlKC02NS42IDExMS4yIC0xNTQuMikgc2NhbGUoMTMuNzY5MTkgMzEuNzUwMDkpIi8+PGVsbGlwc2UgZmlsbD0iI2I2Y2ViNCIgY3g9IjE4NCIgY3k9IjQ1IiByeD0iNjUiIHJ5PSIyMCIvPjxwYXRoIGZpbGw9IiMyYTQzMmEiIGQ9Ik0xNjQgMS45bC0xNS4yIDQzLjMgMS0yMi4zIDU5LjgtMTMuNXoiLz48cGF0aCBmaWxsPSIjYjNjMTk0IiBkPSJNOC4xIDYybDY3LjMtNDItNTkuNSAxMS42TC0xMi4zIDYyeiIvPjxwYXRoIGZpbGw9IiM0ODRlM2IiIGQ9Ik0yNyA1aDYydjIySDI3eiIvPjxwYXRoIGZpbGw9IiNkNWQ0YTIiIGQ9Ik0yMDkgMjJsLTMyLTExLTMwIDMweiIvPjwvZz48L3N2Zz4=);"
+	/>
+</pre></code>
+
+
+<h1>Off to the races!</h1>
+Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPage Test.
+
+When you are completed, you can submit your results into this form:
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdYhsJWpZGrzrg76MmSzkKxSlyfvblDX9_SmaKi7Q39R0FLTw/viewform">Submit Your Site!</a>
+
+We'll award a prize for the fastest site, and for the site whose images are most optimized for size!
