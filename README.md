@@ -16,13 +16,13 @@ index.html is a pretend "summer vacation blog post" with 15 images.  The images 
 We would like to take these images, and modify them to get the page to load faster.  To benchmark these tests, we'll use 2 tools:
 
 1. <a href="https://webspeedtest.cloudinary.com" target = "_blank">Website Speed Test</a> to test the performance of the images on the page.
-2. <a href="https://webpagetest.org" target = "_blank">WebPageTest</a> to measure the load time of the page.
+2. <a href="https://webpagetest.org" target="_blank">WebPageTest</a> to measure the load time of the page.
 
 (note that these two tools are synced, if you run a WebPageTest run, you can access the Website Speed Test results from the "Image Analysis" link at the top of the page.
 
 Here are links to the initial results (unoptimized):
 
-<a href="https://webspeedtest.cloudinary.com/results/180315_AS_9dc54a8880a3415473c2f1fd03ea3895" target = "_blank">WebsiteSpeedTest</a> 
+<a href="https://webspeedtest.cloudinary.com/results/180315_AS_9dc54a8880a3415473c2f1fd03ea3895" target="_blank">WebsiteSpeedTest</a> 
 The initial page scores "mediocre" in WbSite Speed Test, but we can see that the page has 10MB of images, and Cloudinary can reduce the files to 732 KB - a data savings of 92%!
 <img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
 
@@ -39,10 +39,10 @@ The images on this page are all JPG images.  JPG is a lossy image format, meanin
 
 You can adjust quality of images with any image processing tool. However, to simplify this exercise, we will use Cloudinary's tooling to change the quality on the fly. This is easily done by adjusting parameters in the url:
 Here is the full quality image:
-<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target = "_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
+<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
 and here is the image at quality = 50:
-<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target = "_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
+<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
 By simply adding the q_50 parameter, Cloudinary generates an image at quality 50.  You can manually tweak the quality number for each image, or you can use the "q_auto" parameter to create an image with the maximum quality reduction that is imperceptible to the human eye.
 
@@ -51,7 +51,7 @@ By simply adding the q_50 parameter, Cloudinary generates an image at quality 50
 There are formats that have better compression algorithms than others. Since WebSite Speed Test and WebPageTest use desktop Chrome by default, we an use a format like Webp for potentially greater savings.
 
 Rather than brute forcing through all the image formats, we can again leverage the Cloudinary toolchain, and add the "f_auto" parameter to the url - and Cloudinary will pick the best format (based on compatibility, size and quality) to deliver to the device.
-<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target = "_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
+<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
 
 <b>pixels</b>
@@ -60,7 +60,7 @@ All of these images are being delivered at a resolution much higher than require
 
 To resize these images, you can adjust the width parameter in the url.  In the sample image, it is set to 2500. Open the image in a new tab, and adjust the number - and you'll see that a smaller (or larger) image is delivered to the browser:
 
-<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target = "_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
+<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
 <b>responsive Design</b>
 
