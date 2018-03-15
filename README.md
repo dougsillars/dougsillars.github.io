@@ -14,6 +14,9 @@ We would like to take these images, and modify them to get the page to load fast
 
 index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded staright from Google Photos, and as a result, the page weighs over 10 MB.
 
-We would like to take these images and modify them to get the page to load faster.  To benchmark these tests, we'll use Website Speed Test, a tool that tests the images on the page vs. an optimized version, and looks for savings.  The initial page scores "mediocre"
+We would like to take these images and modify them to get the page to load faster.  To benchmark these tests, we'll use Website Speed Test, a tool that tests the images on the page vs. an optimized version, and looks for savings.  The initial page scores "mediocre", but we can see that the page has 10MB of images, and Cloudinary can reduce the files to 732 KB - a data savings of 92%!
 
 <img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
+
+
+SO, what steps can we take.  As I discussed in my presentation, there are 
