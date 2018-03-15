@@ -12,7 +12,7 @@ In this excersise, we will use Cloudinary, a cloud based image delivery service 
 
 index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB.
 
-<h2>Tools&</h2>
+<h2>Tools</h2>
 We would like to take these images, and modify them to get the page to load faster.  To benchmark these tests, we'll use 2 tools:
 
 1. <a href="https://webspeedtest.cloudinary.com" target = "_blank">Website Speed Test</a> to test the performance of the images on the page.
@@ -22,7 +22,7 @@ We would like to take these images, and modify them to get the page to load fast
 
 Here are links to the initial results (unoptimized):
 
-&<a href="https://webspeedtest.cloudinary.com/results/180315_AS_9dc54a8880a3415473c2f1fd03ea3895" target="_blank">WebsiteSpeedTest</a> 
+<a href="https://webspeedtest.cloudinary.com/results/180315_AS_9dc54a8880a3415473c2f1fd03ea3895" target="_blank">WebsiteSpeedTest</a> 
 The initial page scores "mediocre" in WbSite Speed Test, but we can see that the page has 10MB of images, and Cloudinary can reduce the files to 732 KB - a data savings of 92%!
 <img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
 
@@ -33,7 +33,7 @@ Shows that the load time was 19.6s, and the SpeedIndex (a measurement of speed t
 
 So, what steps can we take to make this page faster?  As I discussed in my presentation, there are several steps we can take. So, fork this page and begin Optimizing!
 
-<b>Image Quality</b>
+<h2>Image Quality</h2>
 
 The images on this page are all JPG images.  JPG is a lossy image format, meaning that as you lower the image quality, pixels are removed from the image - lowering the visual quality of the image.  Goole recomends that all images on the web be lowered to at least 85% quality to reduce file size.
 
@@ -47,7 +47,7 @@ and here is the image at quality = 50:
 By simply adding the q_50 parameter, Cloudinary generates an image at quality 50.  You can manually tweak the quality number for each image to find the optimal balance between quality and size, or you can use the "q_auto" parameter to create an image with the maximum quality reduction that is imperceptible to the human eye. Try it with the image above!
 
 
-<b>Format</b>
+<h2>Format</h2>
 
 There are formats that have better compression algorithms than others. Since WebSite Speed Test and WebPageTest use desktop Chrome by default, we an use a format like Webp for potentially greater savings.
 
@@ -55,7 +55,7 @@ Rather than brute forcing through all the image formats, we can again leverage t
 <a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
 
-<b>Pixels</b>
+<h2>Pixels</h2>
 
 All of these images are being delivered at a resolution much higher than required for a typical browser screen (and much too large for a mobile device!)  The device will resize the image, and shed unnecessary pixels from the image before it appears on the screen.  In some ways, this is double taxation - it costs time to download the large image, and then more time for the device to resize the file.
 
@@ -65,7 +65,7 @@ To resize these images, you can adjust the width parameter in the url.  In the s
 
 Again, we can brute force this change by manually changing the values for each image.  But this will only fix the image for one screen.  Which brings us to:
 
-<b>Responsive Images</b>
+<h2>Responsive Images</h2>
 
 Now, you can adjust each image individually for the width, but we can also do so programmatically.  By enclosing the img tag in a picture tag, we can adjust the iamge that is delivered based on the viewport size:
 
@@ -86,7 +86,7 @@ sizes ="min-width: 500px) 32vw, 100vw"
 
 In this case, if the screen is greater than 500 pixels wide, the image will take up just 1/3 of the screen, and below 500px, it will use 100% of the screen.  This is a great way to build multiple layouts for different device screen sizes.
 
-<b>Preview Images</b>
+<h2>Preview Images</h2>
 
 In the last few sections, we have resized the images to balance the size and quality of the images.  In this final section, we are going to create placeholder images for each file. You may have seen this in apps like Facebook, Pinterest or Google Image search where a placeholder image appears before the final image.  
 
