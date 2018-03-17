@@ -81,7 +81,7 @@ Test this out on the <a href="https://dougsillars.github.io/picture.html">pictur
 
 The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
 <pre><code>
-sizes ="min-width: 500px) 32vw, 100vw"
+sizes ="(min-width: 500px) 32vw, 100vw"
 </code></pre>
 
 In this case, if the screen is greater than 500 pixels wide, the image will take up just 1/3 of the screen, and below 500px, it will use 100% of the screen.  This is a great way to build multiple layouts for different device screen sizes.
@@ -115,4 +115,3 @@ Ok!  Now you have all the code you need to update the webpage in this gist.  Opt
 When you are completed, you can submit your results into this form:
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYhsJWpZGrzrg76MmSzkKxSlyfvblDX9_SmaKi7Q39R0FLTw/viewform">Submit Your Site!</a>
 
-We'll award a prize for the fastest site, and for the site whose images are most optimized for size!
