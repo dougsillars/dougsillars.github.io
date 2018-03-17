@@ -78,6 +78,8 @@ sizes = "100vw"/&gt
 </code></pre>
 
 Test this out on the <a href="https://dougsillars.github.io/picture.html">picture</a> page. Resize the screen, and the check the url of the image!
+(If you have cloned this repo, and the images do not load, you'll see a security error in the URL bar.  Allow unsafe scripts for this image to load).
+
 
 The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
 <pre><code>
