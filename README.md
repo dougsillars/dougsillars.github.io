@@ -109,7 +109,7 @@ Using this code, we use the SVG as a background image.  Since the code is right 
 	/>
 </pre></code>
 
-Here are the <a href = "https://dougsillars.github.io/svglist.txt>SVG images</a>
+Here are the <a href = "https://dougsillars.github.io/svglist.txt"">SVG images</a>
 
 <h1>Off to the races!</h1>
 Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPage Test.
