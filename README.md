@@ -108,7 +108,10 @@ You also get the code you need to display the different image sizes.  You can se
 <img srcset="img/responsive.webp"
 	 src = "img/responsive.gif">
 
-
+<picture>
+	<source srcset="img/responsive.webp" />
+	<img src="img/responsive.gif" />
+</picture>
 
 The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
 <pre><code>
