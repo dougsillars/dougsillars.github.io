@@ -65,13 +65,14 @@ http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v15210
 
 <h2>Pixels</h2>
 
-All of these images are being delivered at a resolution much higher than required for a typical browser screen (and much too large for a mobile device!)  The device will resize the image, and shed unnecessary pixels from the image before it appears on the screen.  In some ways, this is double taxation - it costs time to download the large image, and then more time for the device to resize the file.
+AS you have been following along, you've probably noticed the 'w_2500' parameter.  This parameter tells Cloudinary to resize the image to 2500 pixels wide.  Now, even on a laptop, an image that only uses 25-30% of the screen does not need to be 2500 pixels wide.  
 
-To resize these images, you can adjust the width parameter in the url.  In the sample image, it is set to 2500 (the parameter is w_2500). Open the image in a new tab, and adjust the number - and you'll see that a smaller (or larger) image is delivered to the browser:
+When a device has a large image, it will resize the image, shedding unnecessary pixels from the image before it appears on the screen.  In some ways, this is double taxation - it costs time to download the large image, and then additional time for the device to resize the file. (This is further compounded on low end mobile devices, where the low powered processor takes longer, and draws more power to resize the image)
+
+To resize these images, you can adjust the width parameter in the url.  Open the image in a new tab, and adjust the number - and you'll see that a smaller (or larger) image is delivered to the browser:
 
 <a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
 
-Again, we can brute force this change by manually changing the values for each image.  But this will only fix the image for one screen.  Which brings us to:
 
 <h2>Responsive Images</h2>
 
