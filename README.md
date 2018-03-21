@@ -58,7 +58,9 @@ If you look at the 2 URLs carefully, there is one small change made to the 2nd. 
 There are formats that have better compression algorithms than others. JPEG and PNG are older formats, and formats like Webp or JPEG2000 use newer compression algorithms that save even more data without any loss of quality.  Since WebSite Speed Test and WebPageTest use desktop Chrome by default, we try to use Webp on our site during testing.
 
 Rather than creating new images in each format and comparing them, we can again leverage the Cloudinary toolchain, and add the "f_auto" parameter to the url - and Cloudinary will pick the best format (based on compatibility, size and quality) to deliver to the device.
-<img width = "50%" src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" >target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg
+
+<img width = "50%" src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" >
+http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg
 
 
 <h2>Pixels</h2>
