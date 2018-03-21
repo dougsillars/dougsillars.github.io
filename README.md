@@ -112,16 +112,16 @@ You also get the code you need to display the different image sizes.  You can se
 	<img src="img/responsive.gif">
 </picture>
 
-The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
-<pre><code>
-sizes ="(min-width: 500px) 32vw, 100vw"
+Aside:  The "sizes" parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
+
+<pre><code>sizes ="(min-width: 500px) 32vw, 100vw"
 </code></pre>
 
 In this case, if the screen is greater than 500 pixels wide, the image will take up just 1/3 of the screen, and below 500px, it will use 100% of the screen.  This is a great way to build multiple layouts for different device screen sizes.
 
 <h2>Preview Images</h2>
 
-In the last few sections, we have resized the images to balance the size and quality of the images.  In this final section, we are going to create placeholder images for each file. You may have seen this in apps like Facebook, Pinterest or Google Image search where a placeholder image appears before the final image.  
+In the last few sections, we have resized the images to balance the size and quality of the images, and to fit the painted area of the screen.  In this  section, we are going to create placeholder images for each file. You may have seen this in apps like Facebook, Pinterest or Google Image search where a placeholder image appears nearly immediately, and then the final image loads in later.
 
 I have created SVG images to load in the background before the larger image can be downloaded.  This is great on slower connections, as the screen is populated with color indicating an image is coming.  I used <a href="https://github.com/technopagan/sqip">SQIP</a> to create these thumbnails.
 
@@ -140,7 +140,27 @@ Using this code, we use the SVG as a background image.  Since the code is right 
 	/>
 </pre></code>
 
-Here are the <a href = "https://dougsillars.github.io/svglist.txt">SVG images</a>
+Here are the <a href = "https://dougsillars.github.io/svglist.txt">SVG images</a> with names for referencing an external file, or the code to use inside the html.
+
+When considering inlining images into html, you should consider tings like cache life of the htm vs. the image.
+
+<h1>Lazy Loading</h1>
+
+"The fastest code is the code that never runs"
+"the fastest request is the request never made"
+
+When it comes to loading a webpage - the fewer the number of requests, the faster the page will load.  So, how can we reduce the number of requests.  There are a number of libraries that help you lazy load images.  
+
+The idea behind lazy loading is to only load the images that appear on the screen (or are about to appear on the screen as the user scrolls).  If the user never scrolls to the bottom 1/2 of your webpage - those images will never load - reducing bytes, and the amount of time it takes the page to load.
+
+In this example, I have used <a href="https://github.com/aFarkas/lazysizes>lazysizes</a> to help me load my images.  Lazyizes allows you to use responsive images, and also a preview image with laz loading your images.  
+
+The result is the preview image loads for all images, but only the images in the viewport are downloaded - and they use the responsive image logic to select the correct image.  
+
+This is essentially the 'Holy Grail' of image optimization - we can only load the images required, have a preview image while the image loads, and use responsive delivery to ensure that the image is properly sized and formatted for he device.
+You can see how this works with 2 test pages:
+<a href="https://dougsillars.github.io/lazy/index_lazy.html">lazyload with external svg references</a> and <a href="https://dougsillars.github.io/lazy/index_lazy_inline_.html">lazyload with inline svg references</a>.
+
 
 <h1>Off to the races!</h1>
 Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPage Test.
