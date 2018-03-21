@@ -153,7 +153,7 @@ When it comes to loading a webpage - the fewer the number of requests, the faste
 
 The idea behind lazy loading is to only load the images that appear on the screen (or are about to appear on the screen as the user scrolls).  If the user never scrolls to the bottom 1/2 of your webpage - those images will never load - reducing bytes, and the amount of time it takes the page to load.
 
-In this example, I have used <a href="https://github.com/aFarkas/lazysizes>lazysizes</a> to help me load my images.  Lazyizes allows you to use responsive images, and also a preview image with laz loading your images.  
+In this example, I have used <a href="https://github.com/aFarkas/lazysizes">lazysizes</a> to help me load my images.  Lazyizes allows you to use responsive images, and also a preview image with laz loading your images.  
 
 The result is the preview image loads for all images, but only the images in the viewport are downloaded - and they use the responsive image logic to select the correct image.  
 
