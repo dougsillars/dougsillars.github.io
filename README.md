@@ -109,7 +109,7 @@ You also get the code you need to display the different image sizes.  You can se
 	 src = "img/responsive.gif">
 
 <picture>
-	<source srcset="img/responsive.webp" />
+	<source type="image/webp" srcset="img/responsive.webp" />
 	<img src="img/responsive.gif" />
 </picture>
 
