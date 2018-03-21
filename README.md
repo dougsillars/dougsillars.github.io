@@ -102,7 +102,7 @@ In this case, I have provided just 3 additional responsive images.  For saller s
 
 The site allows you to pick the pixel range of the enw images, the size jump (in KB) and the max number of images.  Once you upload an image, it gives you the breakpoints:
 
-<img width = "50%" src = "img/responsiveAlps.png"><img width = "75%" src = "img/breakpointAlps.png">
+<img width = "50%" src = "img/responsiveAlps.png"><img width = "50%" src = "img/breakpointsAlps.png">
 
 
 The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
