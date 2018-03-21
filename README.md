@@ -38,12 +38,15 @@ The images on this page are all JPG images.  JPG is a lossy image format, meanin
 
 You can adjust quality of images with any image processing tool. However, to simplify this exercise, we will use Cloudinary's tooling to change the quality on the fly. This is easily done by adjusting parameters in the url:
 Here is the full quality image:
-<img width = "100%" src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg">
+<img width = "50%" src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg">
 
 http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg
 
 and here is the image at quality = 50:
-<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
+<img width = "50%" src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg">
+
+http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg
+
 
 By simply adding the q_50 parameter, Cloudinary generates an image at quality 50.  You can manually tweak the quality number for each image to find the optimal balance between quality and size, or you can use the "q_auto" parameter to create an image with the maximum quality reduction that is imperceptible to the human eye. Try it with the image above!
 
