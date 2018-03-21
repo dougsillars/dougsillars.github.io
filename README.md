@@ -104,6 +104,11 @@ The site allows you to pick the pixel range of the enw images, the size jump (in
 
 <img width = "50%" src = "img/responsiveAlps.png"><img width = "50%" src = "img/breakpointsAlps.png">
 
+You also get the code you need to display the different image sizes.  You can see the results on the <a href="responsive.html>responsive images</a> page. Open this page, and change the size of your browser window.  So that you can see that the images are changing, I made every other image load with sepia effects (another modification possible with Cloudinary).
+<img srcset="img/responsive.webp"
+	 src = "img/responsive.gif">
+
+
 
 The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
 <pre><code>
