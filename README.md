@@ -23,11 +23,11 @@ Here are links to the initial results (unoptimized):
 
 <a href="https://webspeedtest.cloudinary.com/results/180315_AS_9dc54a8880a3415473c2f1fd03ea3895" target="_blank">WebsiteSpeedTest</a> 
 The initial page scores "mediocre" in WebSite Speed Test, but we can see that the page has 10MB of images, and Cloudinary can reduce the files to 732 KB - a data savings of 92%!
-<img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
+<img width = "100%" src="https://dougsillars.github.io/img/original_score.png"/>
 
 <a href = "https://webpagetest.org/result/180315_0S_8d8676cea9714fd1bf6820d70cb139c6/" target = "_blank">WebPageTest</a>
 Shows that the load time was 19.6s, and the SpeedIndex (a measurement of speed to paint the screen was 7258.
-<img width = "100%" src="https://dougsillars.github.io/Webpagetest_screenshot.png"/>
+<img width = "100%" src="https://dougsillars.github.io/img/Webpagetest_screenshot.png"/>
 
 
 So, what steps can we take to make this page faster?  As I discussed in my Lunch and Learn, there are several steps we can take. So, clone this page and begin Optimizing!
@@ -129,7 +129,7 @@ SVG files are vector graphics, and are stored as XML, so they can be added right
 
 <img src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063217/MyVacation/IMG_20160619_173136306.jpg">
 
-<img src="https://dougsillars.github.io/plitvice.svg">
+<img src="https://dougsillars.github.io/img/plitvice.svg">
 
 Using this code, we use the SVG as a background image.  Since the code is right ni the HTML, it loads immediately while the larger image continues to load:
 
@@ -153,7 +153,7 @@ When it comes to loading a webpage - the fewer the number of requests, the faste
 
 The idea behind lazy loading is to only load the images that appear on the screen (or are about to appear on the screen as the user scrolls).  If the user never scrolls to the bottom 1/2 of your webpage - those images will never load - reducing bytes, and the amount of time it takes the page to load.
 
-In this example, I have used <a href="https://github.com/aFarkas/lazysizes">lazysizes</a> to help me load my images.  Lazyizes allows you to use responsive images, and also a preview image with laz loading your images.  
+In this example, I have used <a href="https://github.com/aFarkas/lazysizes">lazysizes</a> to help me load my images.  Lazyizes allows you to use responsive images, and also a preview image with lazy loading your images.  
 
 The result is the preview image loads for all images, but only the images in the viewport are downloaded - and they use the responsive image logic to select the correct image.  
 
@@ -166,5 +166,9 @@ You can see how this works with 2 test pages:
 Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPage Test.
 
 When you are completed, you can submit your results into this form:
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdYhsJWpZGrzrg76MmSzkKxSlyfvblDX9_SmaKi7Q39R0FLTw/viewform">Submit Your Site!</a>
 
+<h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYhsJWpZGrzrg76MmSzkKxSlyfvblDX9_SmaKi7Q39R0FLTw/viewform">Submit Your Site!</a></h2>
+To run the required tests, your site must be hosted and accessible from the internet.  You can use GitHub Pages.
+1. Visit pages.github.com
+2. set up a repository named <github username>.github.io
+3. once this is created, you are given the option to import from another repository.  Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've essentially cloned this repository into your own GitHub Pages repository.
