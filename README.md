@@ -1,6 +1,5 @@
-# dougsillars.github.io
+# Fast and Beautiful Images
 
-Building fast and beautiful images for apps the the web.  
 
 According to the HTTPArchive, >50% of all data on mobile websites are images, and the number of KB is grew by 5% year over year (March, 2017- March 2018).
 
@@ -8,12 +7,12 @@ Research shows that webpages and apps that are slow to load frustrate users.
 
 <h1> Speeding up A Slow Website: Optimizing Images</h1>
 
-In this excersise, we will use Cloudinary, a cloud based image delivery service to optimize a simple webpage and improve it's load time while still serving beautful images that will delight everyone who visits.
+In this excersise, we will use Cloudinary, a cloud based image delivery service, to optimize a simple webpage and improve its load time while still serving beautiful images that will delight everyone who visits.
 
-index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB.
+index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB.  The first load of the page (when the images are not cached) is extremely slow.  <a href = "https://dougsillars.github.io/">Try it!</a> (See what I mean?)
 
 <h2>Tools</h2>
-We would like to take these images, and modify them to get the page to load faster.  To benchmark these tests, we'll use 2 tools:
+To speed up this webpage, we need to load everything faster.  Simply put, these images need to get smaller, so they download faster. To benchmark these tests, we'll use 2 tools:
 
 1. <a href="https://webspeedtest.cloudinary.com" target = "_blank">Website Speed Test</a> to test the performance of the images on the page.
 2. <a href="https://webpagetest.org" target="_blank">WebPageTest</a> to measure the load time of the page.
@@ -23,7 +22,7 @@ We would like to take these images, and modify them to get the page to load fast
 Here are links to the initial results (unoptimized):
 
 <a href="https://webspeedtest.cloudinary.com/results/180315_AS_9dc54a8880a3415473c2f1fd03ea3895" target="_blank">WebsiteSpeedTest</a> 
-The initial page scores "mediocre" in WbSite Speed Test, but we can see that the page has 10MB of images, and Cloudinary can reduce the files to 732 KB - a data savings of 92%!
+The initial page scores "mediocre" in WebSite Speed Test, but we can see that the page has 10MB of images, and Cloudinary can reduce the files to 732 KB - a data savings of 92%!
 <img width = "100%" src="https://dougsillars.github.io/original_score.png"/>
 
 <a href = "https://webpagetest.org/result/180315_0S_8d8676cea9714fd1bf6820d70cb139c6/" target = "_blank">WebPageTest</a>
@@ -31,15 +30,17 @@ Shows that the load time was 19.6s, and the SpeedIndex (a measurement of speed t
 <img width = "100%" src="https://dougsillars.github.io/Webpagetest_screenshot.png"/>
 
 
-So, what steps can we take to make this page faster?  As I discussed in my presentation, there are several steps we can take. So, clone this page and begin Optimizing!
+So, what steps can we take to make this page faster?  As I discussed in my Lunch and Learn, there are several steps we can take. So, clone this page and begin Optimizing!
 
 <h2>Image Quality</h2>
 
-The images on this page are all JPG images.  JPG is a lossy image format, meaning that as you lower the image quality, pixels are removed from the image - lowering the visual quality of the image.  Goole recomends that all images on the web be lowered to at least 85% quality to reduce file size.
+The images on this page are all JPG images.  JPG is a lossy image format, meaning that as you lower the image quality, pixels are removed from the image - lowering the visual quality of the image.  Google recommends that all images on the web use at least 85% quality to reduce file size.
 
 You can adjust quality of images with any image processing tool. However, to simplify this exercise, we will use Cloudinary's tooling to change the quality on the fly. This is easily done by adjusting parameters in the url:
 Here is the full quality image:
-<a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
+<img width = "100%" src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg">
+
+http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg
 
 and here is the image at quality = 50:
 <a href="http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg" target="_blank">http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg</a>
