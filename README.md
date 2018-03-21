@@ -76,12 +76,17 @@ To resize these images, you can adjust the width parameter in the url.  Open the
 
 <h2>Responsive Images</h2>
 
-Now, you can adjust each image individually for the width, but we can also do so programmatically.  By enclosing the img tag in a picture tag, we can adjust the iamge that is delivered based on the viewport size:
+The internet is not just viewed on a single browser.  Optimizing the image for one user isn't enough. Let's make sure that the images we serve are optimized for every screen size.
+
+We've seen how to each image individually for the width, but we can also do so programmatically.  By enclosing the img tag in a picture tag, we can adjust the image that is delivered based on the viewport size:
 
 <pre><code>
 &ltpicture&gt
 	&ltimg src="http://res.cloudinary.com/hackchallenge/image/upload/w_2500/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
-			srcset="http://res.cloudinary.com/hackchallenge/image/upload/w_500/v1521063217/MyVacation/IMG_20160619_173136306.jpg 500w, http://res.cloudinary.com/hackchallenge/image/upload/w_1000/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1000w,http://res.cloudinary.com/hackchallenge/image/upload/w_1500/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1500w"
+			srcset="http://res.cloudinary.com/hackchallenge/image/upload/w_500/v1521063217/MyVacation/IMG_20160619_173136306.jpg 500w,
+			 http://res.cloudinary.com/hackchallenge/image/upload/w_1000/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1000w,
+			 http://res.cloudinary.com/hackchallenge/image/upload/w_1500/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1500w"
+			 
 sizes = "100vw"/&gt
 &lt/picture&gt
 </code></pre>
