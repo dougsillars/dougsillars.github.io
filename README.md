@@ -94,6 +94,11 @@ We've seen how to each image individually for the width, but we can also do so p
 Test this out on the <a href="https://dougsillars.github.io/picture.html">picture</a> page. Resize the screen, and the check the url of the image!
 (If you have cloned this repo, and the images do not load, you'll see a security error in the URL bar.  Allow unsafe scripts for this image to load).
 
+The srcset paramater lists 3 additional images for loading that are 500, 1000 and 1500 pixels wide (you can verify this in the url, and also the parameter after the url).
+
+IN this case, I have provided just 3 additional responsive images.  For saller screens, the smaller image will load - and this is great.  But there was no science behind my selections - I just winged it. Jason Grigsby has suggested <a href = "https://cloudfour.com/thinks/responsive-images-101-part-9-image-breakpoints/">images that are 20KB apart</a> to minimize pixel loss, and to maximize image caching.  (This is part 9 of a 10 part series, and I recommend the entire set of posts).  To calculate the dimensions of these different images, you can use <a hred="https:www.responsivebreakpoints.com">Responsive Breakpoints</a>.
+
+
 
 The sizes parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
 <pre><code>
