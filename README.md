@@ -5,6 +5,8 @@ According to the HTTPArchive, >50% of all data on mobile websites are images, an
 
 Research shows that webpages and apps that are slow to load frustrate users.
 
+This page is also available as a <a href="https://cloudinary.gitbooks.io/optimize-media-for-fast-page-loading/content/contest.html">GitBook</a>
+
 <h1> Speeding up A Slow Website: Optimizing Images</h1>
 
 In this exercise, we will use <a href="https://www.cloudinary.com">Cloudinary</a>, a cloud based image delivery service, to optimize a simple webpage and improve its load time while still serving beautiful images that will delight everyone who visits.
