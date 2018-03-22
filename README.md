@@ -7,7 +7,7 @@ Research shows that webpages and apps that are slow to load frustrate users.
 
 <h1> Speeding up A Slow Website: Optimizing Images</h1>
 
-In this excersise, we will use Cloudinary, a cloud based image delivery service, to optimize a simple webpage and improve its load time while still serving beautiful images that will delight everyone who visits.
+In this exercise, we will use <a href="https://www.cloudinary.com">Cloudinary</a>, a cloud based image delivery service, to optimize a simple webpage and improve its load time while still serving beautiful images that will delight everyone who visits.
 
 index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB.  The first load of the page (when the images are not cached) is extremely slow.  <a href = "https://dougsillars.github.io/">Try it!</a> (See what I mean?)
 
@@ -96,7 +96,7 @@ Test this out on the <a href="https://dougsillars.github.io/picture.html">pictur
 
 The srcset paramater lists 3 additional images for loading that are 500, 1000 and 1500 pixels wide (you can verify this in the url, and also the parameter after the url).
 
-In this case, I have provided just 3 additional responsive images.  For saller screens, the smaller image will load - and this is great.  But there was no science behind my selections - I just winged it. Jason Grigsby has suggested <a href = "https://cloudfour.com/thinks/responsive-images-101-part-9-image-breakpoints/">images that are 20KB apart</a> to minimize pixel loss, and to maximize image caching.  (This is part 9 of a 10 part series, and I recommend the entire set of posts).  To calculate the dimensions of these different images, there are a number of different tools.  In this exercese, we'll use <a href="http://www.responsivebreakpoints.com/">Responsive Breakpoints</a>, a service from Cloudinary.
+In this case, I have provided just 3 additional responsive images.  For smaller screens, the smaller image will load - and this is great.  But there was no science behind my selections - I just winged it. Jason Grigsby has suggested <a href = "https://cloudfour.com/thinks/responsive-images-101-part-9-image-breakpoints/">images that are 20KB apart</a> to minimize pixel loss, and to maximize image caching.  (This is part 9 of a 10 part series, and I recommend the entire set of posts).  To calculate the dimensions of these different images, there are a number of different tools.  In this exercise, we'll use <a href="http://www.responsivebreakpoints.com/">Responsive Breakpoints</a>, a service from Cloudinary.
 
 <img width = "75%" src = "img/ResponsiveBreakpoints.png">
 
@@ -140,9 +140,9 @@ Using this code, we use the SVG as a background image.  Since the code is right 
 
 <pre><code>
 
- <img width = "100%" src = "http://res.cloudinary.com/hackchallenge/image/upload/w_4000,q_auto,f_auto/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
+ &ltimg width = "100%" src = "http://res.cloudinary.com/hackchallenge/image/upload/w_4000,q_auto,f_auto/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
 	style="background-size: cover; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjE2IDY2NCI+PGZpbHRlciBpZD0iYiI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTIiIC8+PC9maWx0ZXI+PHBhdGggZmlsbD0iIzgyOTk3NiIgZD0iTTAgMGgzNjE2djY2M0gweiIvPjxnIGZpbHRlcj0idXJsKCNiKSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNyA3KSBzY2FsZSgxNC4xMjUpIiBmaWxsLW9wYWNpdHk9Ii41Ij48ZWxsaXBzZSBmaWxsPSIjYzBkNWRkIiByeD0iMSIgcnk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KC0yMC41Nzg1NSAtOTkuOTUxNSAyMC42NTg5NiAtNC4yNTMzOCAxMjUuMyAyOC4yKSIvPjxlbGxpcHNlIGZpbGw9IiMzZjUzMzAiIHJ4PSIxIiByeT0iMSIgdHJhbnNmb3JtPSJtYXRyaXgoMTMuMzM4MTggLTE1LjM2NTc5IDI3LjI0ODkzIDIzLjY1MzI2IDU2LjggMjEuNCkiLz48ZWxsaXBzZSBmaWxsPSIjNDg2MjE5IiByeD0iMSIgcnk9IjEiIHRyYW5zZm9ybT0icm90YXRlKC02NS42IDExMS4yIC0xNTQuMikgc2NhbGUoMTMuNzY5MTkgMzEuNzUwMDkpIi8+PGVsbGlwc2UgZmlsbD0iI2I2Y2ViNCIgY3g9IjE4NCIgY3k9IjQ1IiByeD0iNjUiIHJ5PSIyMCIvPjxwYXRoIGZpbGw9IiMyYTQzMmEiIGQ9Ik0xNjQgMS45bC0xNS4yIDQzLjMgMS0yMi4zIDU5LjgtMTMuNXoiLz48cGF0aCBmaWxsPSIjYjNjMTk0IiBkPSJNOC4xIDYybDY3LjMtNDItNTkuNSAxMS42TC0xMi4zIDYyeiIvPjxwYXRoIGZpbGw9IiM0ODRlM2IiIGQ9Ik0yNyA1aDYydjIySDI3eiIvPjxwYXRoIGZpbGw9IiNkNWQ0YTIiIGQ9Ik0yMDkgMjJsLTMyLTExLTMwIDMweiIvPjwvZz48L3N2Zz4=);"
-	/>
+	/&gt
 </pre></code>
 
 Here are the <a href = "https://dougsillars.github.io/svglist.txt">SVG images</a> with names for referencing an external file, or the code to use inside the html.
