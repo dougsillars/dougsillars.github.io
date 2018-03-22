@@ -112,13 +112,18 @@ You also get the code you need to display the different image sizes.  You can se
 	<img src="img/responsive.gif">
 </picture>
 
-Aside:  The "sizes" parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
+<aside>Aside:  The "sizes" parameter is also really cool.  In the example above, all images are sized to 100% of the view window.  However, in some cases, you could do something like:
 
 <pre><code>sizes ="(min-width: 500px) 32vw, 100vw"
 </code></pre>
 
+
 In this case, if the screen is greater than 500 pixels wide, the image will take up just 1/3 of the screen, and below 500px, it will use 100% of the screen.  This is a great way to build multiple layouts for different device screen sizes.
 
+Also note that you have to specify the viewport in the HTML, and remove the width tags
+<pre><code><meta name="viewport" content="width=device-width" /></code></pre>
+
+</aside>
 <h2>Preview Images</h2>
 
 In the last few sections, we have resized the images to balance the size and quality of the images, and to fit the painted area of the screen.  In this  section, we are going to create placeholder images for each file. You may have seen this in apps like Facebook, Pinterest or Google Image search where a placeholder image appears nearly immediately, and then the final image loads in later.
