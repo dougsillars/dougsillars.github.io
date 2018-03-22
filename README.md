@@ -121,7 +121,7 @@ You also get the code you need to display the different image sizes.  You can se
 In this case, if the screen is greater than 500 pixels wide, the image will take up just 1/3 of the screen, and below 500px, it will use 100% of the screen.  This is a great way to build multiple layouts for different device screen sizes.
 
 Also note that you have to specify the viewport in the HTML, and remove the width tags
-<pre><code><meta name="viewport" content="width=device-width" /></code></pre>
+<pre><code>&ltmeta name="viewport" content="width=device-width" /&gt</code></pre>
 
 </aside>
 <h2>Preview Images</h2>
