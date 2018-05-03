@@ -1,0 +1,54 @@
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+  </head>
+
+<body>
+  <script
+    src="node_modules/cloudinary-core/cloudinary-core-shrinkwrap.min.js" 
+    type="text/javascript">
+</script>
+
+  
+
+    <img
+		sizes="100vw"
+		srcset="https://res.cloudinary.com/hackchallenge/image/upload/w_200/v1521063217/MyVacation/IMG_20160619_173136306.jpg 200w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_499/v1521063217/MyVacation/IMG_20160619_173136306.jpg 499w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_707/v1521063217/MyVacation/IMG_20160619_173136306.jpg 707w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_887/v1521063217/MyVacation/IMG_20160619_173136306.jpg 887w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_1013/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1013w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_1159/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1159w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_1287/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1287w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_1370/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1370w,
+				https://res.cloudinary.com/hackchallenge/image/upload/w_1400/v1521063217/MyVacation/IMG_20160619_173136306.jpg 1400w"
+				src="https://res.cloudinary.com/hackchallenge/image/upload/w_4000/v1521063217/MyVacation/IMG_20160619_173136306.jpg"
+		alt="">
+
+  <br/>
+  <center>
+
+    <img sizes="(min-width: 500px) 32vw, 100vw"  class="cld-responsive"
+		data-src = "https://res.cloudinary.com/hackchallenge/image/upload/w_auto,c_scale/v1521063209/MyVacation/IMG_20160619_190429.jpg"> 
+
+   <!-- <img sizes="(min-width: 500px) 32vw, 100vw" data-src="https://res.cloudinary.com/hackchallenge/image/upload/w_auto,c_scale/v1521063196/MyVacation/IMG_20160619_190322.jpg"  class="cld-responsive" />
+        
+
+    <img data-src="https://res.cloudinary.com/hackchallenge/image/upload/w_auto,c_scale/v1521063204/MyVacation/IMG_20160619_190419.jpg"
+    class="cld-responsive" 
+    sizes="(min-width: 500px) 32vw, 100vw"  />
+       -->  
+  <br/>
+  </center>
+  
+  <br/>
+  
+
+  	<script type="text/javascript">
+    	var cl = cloudinary.Cloudinary.new({cloud_name: "hackchallenge"}); 
+    	var my_breakpoints = [50, 90, 130, 170, 200, 300, 450, 550, 700, 850, 1000, 1100, 1200];
+    	cl.config({breakpoints:my_breakpoints, responsive_use_breakpoints:"true"})
+    	cl.responsive();
+	</script>
+  
+</body>
