@@ -126,6 +126,22 @@ Also note that you have to specify the viewport in the HTML, and remove the widt
 <pre><code>&ltmeta name="viewport" content="width=device-width" /&gt</code></pre>
 
 </div>
+
+<h3>Responsive Images With Client Hints</h3>
+For Chrome and Android devices (like those used in WebPageTest), Client Hints are a really useful feature that can help with generating responsive images automatically.  Simply initialize the Client Hints in the Head of your webpage:
+
+<pre><code>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+</head>
+</code></pre>
+
+For each request, Chrome will append a header with the device width.  Using the 'w_auto' parameter will allow Cloudinary to build the image optimized to the nearest 100 pixels of the screen width.
+<pre><code>
+<img src="http://res.cloudinary.com/hackchallenge/image/upload/w_auto/v1521063217/MyVacation/IMG_20160619_173136306.jpg"/>
+</code></pre>
+
 <h2>Preview Images</h2>
 
 In the last few sections, we have resized the images to balance the size and quality of the images, and to fit the painted area of the screen.  In this  section, we are going to create placeholder images for each file. You may have seen this in apps like Facebook, Pinterest or Google Image search where a placeholder image appears nearly immediately, and then the final image loads in later.
@@ -170,7 +186,11 @@ You can see how this works with 2 test pages:
 
 
 <h1>Off to the races!</h1>
-Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPage Test.
+Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPageTest.
+
+Big hint:
+Simply use Client Hints (as described above), and add the following parameters to your images "q_auto,f_auto,w_auto", and your images will be pretty well optimized. Add a lazy Loading Library, and you'll be set!
+
 
 When you are completed, you can submit your results into this form:
 
