@@ -188,14 +188,16 @@ You can see how this works with 2 test pages:
 <h1>Off to the races!</h1>
 Ok!  Now you have all the code you need to update the webpage in this gist.  Optimize all you can, and test with Website Speed Test and WebPageTest.
 
-Big hint:
-Simply use Client Hints (as described above), and add the following parameters to your images "q_auto,f_auto,w_auto", and your images will be pretty well optimized. Add a lazy Loading Library, and you'll be set!
+<b>Big hint</b>:
+Simply use Client Hints (as described above), and add the following parameters to your images <b>"q_auto,f_auto,w_auto"</b>, and your images will be pretty well optimized. Add a lazy Loading Library, and you'll be set!
 
 
 When you are completed, you can submit your results into this form:
 
 <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYhsJWpZGrzrg76MmSzkKxSlyfvblDX9_SmaKi7Q39R0FLTw/viewform">Submit Your Site!</a></h2>
 To run the required tests, your site must be hosted and accessible from the internet.  You can use GitHub Pages.
-1. Visit pages.github.com
-2. set up a repository named <github username>.github.io
-3. once this is created, you are given the option to import from another repository.  Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've essentially cloned this repository into your own GitHub Pages repository.
+1. Visit pages.github.com<br/>
+2. set up a repository named <github username>.github.io<br/>
+3. once this is created, you are given the option to import from another repository. <br/>
+Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've essentially cloned this repository into your own GitHub Pages repository.
+5. In your new repo settings - allow publishing to GitHub Pages.
