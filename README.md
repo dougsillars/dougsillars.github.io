@@ -52,7 +52,7 @@ and here is the image at quality = 50:
 http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_50/v1521063280/MyVacation/IMG_20160526_135242148_HDR.jpg
 
 
-If you look at the 2 URLs carefully, there is one small change made to the 2nd.  By simply adding the 'q_50' parameter, Cloudinary generates an image at quality 50.  You can manually tweak the quality for each image by modifying this value.  However, manually tweaking the image quality for lots of images is not scalable.  Luckily, tools like SSIM allow algorithms to find the perfect balance between pixel savings and image quality.  Cloudinary uses a version of SSIM when the 'q_auto' parameter is used.
+If you look at the 2 URLs carefully, there is one small change made to the 2nd.  By simply adding the 'q_50' parameter, Cloudinary generates an image at quality 50.  You can manually tweak the quality for each image by modifying this value.  However, manually tweaking the image quality for lots of images is not scalable.  Luckily, tools like SSIM allow algorithms to find the perfect balance between pixel savings and image quality.  Cloudinary uses a version of SSIM when the <b>'q_auto'</b> parameter is used.
 
 
 <h2>Format</h2>
@@ -67,7 +67,7 @@ http://res.cloudinary.com/hackchallenge/image/upload/w_2500,q_auto,f_auto/v15210
 
 <h2>Pixels</h2>
 
-AS you have been following along, you've probably noticed the 'w_2500' parameter.  This parameter tells Cloudinary to resize the image to 2500 pixels wide.  Now, even on a laptop, an image that only uses 25-30% of the screen does not need to be 2500 pixels wide.  
+As you have been following along, you've probably noticed the 'w_2500' parameter.  This parameter tells Cloudinary to resize the image to 2500 pixels wide.  Now, even on a laptop, an image that only uses 25-30% of the screen does not need to be 2500 pixels wide.  
 
 When a device has a large image, it will resize the image, shedding unnecessary pixels from the image before it appears on the screen.  In some ways, this is double taxation - it costs time to download the large image, and then additional time for the device to resize the file. (This is further compounded on low end mobile devices, where the low powered processor takes longer, and draws more power to resize the image)
 
@@ -131,15 +131,15 @@ Also note that you have to specify the viewport in the HTML, and remove the widt
 For Chrome and Android devices (like those used in WebPageTest), Client Hints are a really useful feature that can help with generating responsive images automatically.  Simply initialize the Client Hints in the Head of your webpage:
 
 <pre><code>
-<head>
-  <meta name="viewport" content="width=device-width" />
-  <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-</head>
+&lthead&gt
+  &ltmeta name="viewport" content="width=device-width" /&gt
+  &ltmeta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width"&gt
+&lt/head&gt
 </code></pre>
 
 For each request, Chrome will append a header with the device width.  Using the 'w_auto' parameter will allow Cloudinary to build the image optimized to the nearest 100 pixels of the screen width.
 <pre><code>
-<img src="http://res.cloudinary.com/hackchallenge/image/upload/w_auto/v1521063217/MyVacation/IMG_20160619_173136306.jpg"/>
+&ltimg src="http://res.cloudinary.com/hackchallenge/image/upload/w_auto/v1521063217/MyVacation/IMG_20160619_173136306.jpg"/&gt
 </code></pre>
 
 <h2>Preview Images</h2>
