@@ -1,16 +1,17 @@
-# Fast and Beautiful Images - a Workshop
+# Fast and Beautiful Images
 
-You've just listened to a talk on image performance - now let's try it out!
 
-(If you missed the talk, and still want to participate, <a href="README2.md">here is more detail</a>.)  You can also see slides of a <a href="https://www.slideshare.net/dougsillars/fast-and-beautiful-images-dublinjs">representative talk</a>.
+According to the HTTPArchive, >50% of all data on mobile websites are images, and the number of KB is grew by 5% year over year (March, 2017- March 2018).
 
-In this repository, I have built a *Very Slow* website.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB. <a href = "https://dougsillars.github.io/">Try it!</a> (See what I mean?)
+Research shows that webpages and apps that are slow to load frustrate users.
 
-Testing this site on <a href="www.webpagetest.org">WebPageTest</a> shows that it takes 19s to load on a desktop:
-<img src="http://res.cloudinary.com/dougsillars/image/upload/f_auto,q_auto/v1532248748/WPT_o5mnbs.png">
+This page is also available as a <a href="https://cloudinary.gitbooks.io/optimize-media-for-fast-page-loading/content/">GitBook.</a>
 
+<h1> Speeding up A Slow Website: Optimizing Images</h1>
 
 In this exercise, we will use <a href="https://www.cloudinary.com">Cloudinary</a>, a cloud based image delivery service, to optimize a simple webpage and improve its load time while still serving beautiful images that will delight everyone who visits.
+
+index.html is a pretend "summer vacation blog post" with 15 images.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB.  The first load of the page (when the images are not cached) is extremely slow.  <a href = "https://dougsillars.github.io/">Try it!</a> (See what I mean?)
 
 <h2>Tools</h2>
 To speed up this webpage, we need to load everything faster.  Simply put, these images need to get smaller, so they download faster. To benchmark these tests, we'll use 2 tools:
