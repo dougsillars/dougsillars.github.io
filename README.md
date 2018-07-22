@@ -12,14 +12,14 @@ Testing this site on <a href="www.webpagetest.org">WebPageTest</a> shows that it
 <h2>Let's Make It Better: Getting Started</h2>
 
 Let's clone this repo, and get it hosted on the internet (using GitHub Pages):
-1. Visit <a href="https://pages.github.com>pages.github.com</a><br/>
-2. set up a repository named <github username>.github.io<br/>
-3. once this is created, you are given the option to import from another repository. <br/>
+1. Visit <a href="https://pages.github.com">pages.github.com</a><br/>
+2. Set up a repository named <github username>.github.io<br/>
+3. Once this is created, you are given the option to import from another repository. <br/>
 Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've forked this repository into your own GitHub Pages repository.
 5. In your new repo settings - allow publishing to GitHub Pages. 
-6. 
+6. Download the source to your laptop using Git, and we can begin updating this page with your favorite editor.
 
-Now 
+
 
 
 
