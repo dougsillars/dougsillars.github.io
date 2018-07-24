@@ -54,3 +54,9 @@ Look at the parameters in the Cloudinary URLs.  The images are full size, so use
 When you are completed, you can submit your results into this form for a chance to win a €100 Amazon Gift Certificate!
 
 <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYhsJWpZGrzrg76MmSzkKxSlyfvblDX9_SmaKi7Q39R0FLTw/viewform">Submit Your Site!</a></h3>
+
+<h2>Appendix</h2>
+Other fun things we can do with Cloudinary:
+
+1. add sepia effects: add e\_sepia:80 to the parameters.  Change the number to change hues.
+2. Lighten images with e\_fill\_light
