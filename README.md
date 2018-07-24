@@ -58,5 +58,10 @@ When you are completed, you can submit your results into this form for a chance 
 <h2>Appendix</h2>
 Other fun things we can do with Cloudinary:
 
-1. add sepia effects: add e\_sepia:80 to the parameters.  Change the number to change hues.
-2. Lighten images with e\_fill\_light
+1. add sepia effects: add e\_sepia:80 to the parameters.  Change the number to change hues. 
+2. Change the image hue with  e\_hue.
+3. Lighten images with e\_fill\_light
+4. Trim image edges e\_trim:10 (use any value 1-100).
+5. Face recognition: g\_faces.  Add glasses (30 pixels wide - for clown sized - go bigger): l\_glasses,w\_30
+6. Face blurring - e\_blur\_faces
+7.
