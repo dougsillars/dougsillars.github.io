@@ -12,8 +12,8 @@ Testing this site on <a href="www.webpagetest.org">WebPageTest</a> shows that it
 <h2>Let's Make It Better: Getting Started</h2>
 
 Let's clone this repo, and get it hosted on the internet (using GitHub Pages):
-1. Visit <a href="https://pages.github.com">pages.github.com</a><br/>
-2. Set up a repository named <github username>.github.io<br/>
+1. Login (or create an account) at <a href="https://www.github.com">Github</a><br/>
+2. Create a new repository.<br/>
 3. Once this is created, you are given the option to import from another repository. <br/>
 Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've forked this repository into your own GitHub Pages repository.
 5. In your new repo settings - allow publishing to GitHub Pages. 
