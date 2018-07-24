@@ -16,8 +16,9 @@ Let's clone this repo, and get it hosted on the internet (using GitHub Pages):
 2. Create a new repository.<br/>
 3. Once this is created, you are given the option to import from another repository. <br/>
 Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've forked this repository into your own GitHub Pages repository.
-5. In your new repo settings - allow publishing to GitHub Pages. 
+5. In your new repo settings - allow publishing to GitHub Pages. The very slow page will be published to <username>.github.io/<repo name>
 6. Download the source to your laptop using Git, and we can begin updating this page with your favorite editor.
+7. Push the changes to GitHub and document the savings with the tools listed below.
 
 
 <h2>Tools</h2>
