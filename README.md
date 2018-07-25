@@ -16,7 +16,7 @@ Let's clone this repo, and get it hosted on the internet (using GitHub Pages):
 2. Create a new repository.<br/>
 3. Once this is created, you are given the option to import from another repository. <br/>
 Enter:"https://github.com/dougsillars/dougsillars.github.io", and you've forked this repository into your own GitHub Pages repository.
-5. In your new repo settings - allow publishing to GitHub Pages. The very slow page will be published to <username>.github.io/<repo name>
+5. In your new repo settings - allow publishing to GitHub Pages. The very slow page will be published to \<username\>.github.io/\<repo name\>
 6. Download the source to your laptop using Git, and we can begin updating this page with your favorite editor.
 7. Push the changes to GitHub and document the savings with the tools listed below.
 
@@ -64,4 +64,5 @@ Other fun things we can do with Cloudinary:
 4. Trim image edges e\_trim:10 (use any value 1-100).
 5. Face recognition: g\_faces.  Add glasses (30 pixels wide - for clown sized - go bigger): l\_glasses,w\_30
 6. Face blurring - e\_blur\_faces
-7.
+7. Grayscale image - e\_grayscale
+8. Colorizing image e\_grayscale/e\_tint:15:blue (change color and % tinting)
