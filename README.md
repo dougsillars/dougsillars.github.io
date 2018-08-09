@@ -6,7 +6,7 @@ You've just listened to a talk on image performance - now let's try it out!
 
 In this repository, I have built a *Very Slow* website.  The images were just uploaded straight from Google Photos, and as a result, the page weighs over 10 MB. <a href = "https://dougsillars.github.io/">Try it!</a> (See what I mean?)
 
-Testing this site on <a href="www.webpagetest.org">WebPageTest</a> shows that it takes 19s to load on a desktop:
+Testing this site on <a href="https://www.webpagetest.org">WebPageTest</a> shows that it takes 19s to load on a desktop:
 <img src="http://res.cloudinary.com/dougsillars/image/upload/f_auto,q_auto/v1532248748/WPT_o5mnbs.png">
 
 <h2>Let's Make It Better: Getting Started</h2>
