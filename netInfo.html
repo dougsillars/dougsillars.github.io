@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<div id= "netInfo"></div>
+
+
+  <script>
+  	navigator.connection.addEventListener('change', logNetworkInfo);
+
+	function logNetworkInfo() {
+  		// Network type that browser uses
+  		document.getElementById('netInfo').innerHTML+= '<br/>         type: ' + navigator.connection.type;
+
+  		// Effective bandwidth estimate
+  		document.getElementById('netInfo').innerHTML+= '<br/>     downlink: ' + navigator.connection.downlink + 'Mb/s';
+
+  		// Effective round-trip time estimate
+  		document.getElementById('netInfo').innerHTML+= '<br/>          rtt: ' + navigator.connection.rtt + 'ms';
+
+ 		 // Upper bound on the downlink speed of the first network hop
+ 		 document.getElementById('netInfo').innerHTML+= '<br/>  downlinkMax: ' + navigator.connection.downlinkMax + 'Mb/s';
+
+  		// Effective connection type determined using a combination of recently
+  		// observed rtt and downlink values: ' +
+  		document.getElementById('netInfo').innerHTML+= '<br/>     effectiveType: ' + navigator.connection.effectiveType;
+  
+  		// True if the user has requested a reduced data usage mode from the user
+  		// agent.
+  		document.getElementById('netInfo').innerHTML+= '<br/>     saveData: ' + navigator.connection.saveData;
+	}
+
+	logNetworkInfo();
+</script>
+
+</body>
+</html>
